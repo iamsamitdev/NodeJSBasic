@@ -5,3 +5,10 @@ const utils = require('./utils')
 utils.sayHello()
 const vat = utils.calculateVat(200,7)
 console.log(vat)
+
+// Import แบบที่ 2 ใช้ Destructing
+const { calculateVat, sayHello } = require('./utils') // Destructuring
+
+sayHello()
+const vat2 = calculateVat(300,7)
+console.log(vat2)
